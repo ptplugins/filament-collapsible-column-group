@@ -1,0 +1,48 @@
+{
+    "name": "ptplugins/filament-collapsible-column-group",
+    "description": "Collapsible (expand/collapse) column groups for FilamentPHP tables — v3, v4, and v5. Click a group header to fold the columns it spans into a thin placeholder; the collapsed state persists across Livewire updates.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "filament",
+        "filamentphp",
+        "laravel",
+        "table",
+        "columns",
+        "column-group",
+        "collapsible",
+        "expand-collapse",
+        "ui"
+    ],
+    "homepage": "https://ptplugins.com/filament-collapsible-column-group",
+    "support": {
+        "issues": "https://github.com/ptplugins/filament-collapsible-column-group/issues",
+        "source": "https://github.com/ptplugins/filament-collapsible-column-group"
+    },
+    "authors": [
+        {
+            "name": "Premtech Plugins",
+            "email": "mihailo@ptplugins.com",
+            "homepage": "https://ptplugins.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "filament/filament": "^3.0 || ^4.0 || ^5.0",
+        "spatie/laravel-package-tools": "^1.16"
+    },
+    "autoload": {
+        "psr-4": {
+            "PtPlugins\\FilamentCollapsibleColumnGroup\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "PtPlugins\\FilamentCollapsibleColumnGroup\\FilamentCollapsibleColumnGroupServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
