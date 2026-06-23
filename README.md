@@ -1,5 +1,9 @@
 # Filament Collapsible Column Group
 
+<p align="center">
+  <img src="./screenshot.png" alt="Filament Collapsible Column Group — fold the columns a group header spans into a thin placeholder" width="100%" class="filament-hidden">
+</p>
+
 > Collapsible (expand/collapse) **column groups** for [FilamentPHP](https://filamentphp.com/) tables — **v3, v4, and v5**. Click a group header and the columns it spans fold away into a thin placeholder; click again to bring them back.
 
 Wide tables with logically grouped columns (e.g. *Q1 / Q2 / Q3 / Q4*, or *Address*, *Contact*, *Billing*) get unreadable fast. This package turns any Filament `ColumnGroup` header into a toggle that collapses everything under it, so users can focus on the groups they care about. The collapsed state is remembered and survives sorting, filtering and pagination.
