@@ -62,6 +62,22 @@ class CollapsibleColumnGroup extends ColumnGroup
         );
     }
 
+    /**
+     * A "+/−" button that collapses all collapsible groups of the table it is rendered in
+     * (or expands them all when every group is already collapsed). Meant for a table
+     * toolbar render hook, e.g. TablesRenderHook::TOOLBAR_SEARCH_AFTER next to the filters.
+     */
+    public static function toggleAllButton(string $tooltip = 'Collapse / expand all column groups'): Htmlable
+    {
+        return new HtmlString(
+            '<button type="button" data-collapsible-toggle-all'
+            .' title="'.e($tooltip).'" aria-label="'.e($tooltip).'"'
+            .' x-on:click="window.CollapsibleColumnGroup?.toggleAll($el)"'
+            .' class="fi-icon-btn flex h-9 items-center justify-center rounded-lg px-2 font-mono text-lg font-semibold text-gray-400 outline-none transition duration-75 hover:text-gray-500 focus-visible:ring-2 focus-visible:ring-primary-600 dark:text-gray-500 dark:hover:text-gray-400">'
+            .'+/−</button>'
+        );
+    }
+
     protected function getGroupSlug(): string
     {
         $label = parent::getLabel();
